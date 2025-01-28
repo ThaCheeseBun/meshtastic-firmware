@@ -131,7 +131,7 @@ bool EInkDisplay::connect()
     digitalWrite(PIN_EINK_EN, LOW);
 #endif
 
-#if defined(TTGO_T_ECHO)
+#if defined(TTGO_T_ECHO) || defined(GAMING_THINGS)
     {
         auto lowLevel = new EINK_DISPLAY_MODEL(PIN_EINK_CS, PIN_EINK_DC, PIN_EINK_RES, PIN_EINK_BUSY, SPI1);
 
