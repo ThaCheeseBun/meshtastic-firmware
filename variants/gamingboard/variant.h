@@ -70,20 +70,19 @@ static const uint8_t SCK =  PIN_SPI1_SCK;
 #define SX126X_RESET LORA_RESET
 #define SX126X_TXEN  (13) // P1.13
 #define SX126X_RXEN  (12) // P1.11
-#define SX126X_DIO2_AS_RF_SWITCH
 #define SX126X_DIO3_TCXO_VOLTAGE 1.8
 
 // Something to do with usb power
 #define NRF_APM
 
 // Battery with 1M / 1M divider
-#define BATTERY_PIN (17) // P0.31
+#define BATTERY_PIN (16) // P0.29
 #define ADC_MULTIPLIER 2
 #define ADC_RESOLUTION 14
 #define BATTERY_SENSE_RESOLUTION_BITS ADC_RESOLUTION
 
 // le buton
-#define BUTTON_PIN (20) // P1.07
+#define BUTTON_PIN (17) // P0.31
 #define BUTTON_NEED_PULLUP
 
 /*
